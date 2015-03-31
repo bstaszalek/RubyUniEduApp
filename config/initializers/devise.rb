@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = 'e7f4484499cd55fb1b1d2a47dfe3f03ad1e602002cf34d78269b9bb1822ba2396fd6211575d0091d6736cbad68fc5eb5bca8e97bda1158bc0ca08f8dc595de1b'
+  # config.secret_key = 'd5445767e3b9ac77ef66a440b191ea555d774b7c8198f4f82dd060d58de8d7959c4134fa0224700acf8d8be323b4e620fe45475f0f03f94021cfdb9965a3bf22'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -60,7 +60,7 @@ Devise.setup do |config|
   # enable it only for database authentication. The supported strategies are:
   # :database      = Support basic authentication with authentication key + password
   # config.http_authenticatable = false
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # If 401 status code should be returned for AJAX requests. True by default.
   # config.http_authenticatable_on_xhr = true
 
@@ -97,7 +97,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '407c2758d717883eb7e6398f1ba8445c2af54e8cd43c5d3b5d334f08626d4c383ea6d55202ca19e809301768ef670c578aabe394db8981f3b893a33af3ecfdab'
+  # config.pepper = '3a387b31370ea05850cccca2ddd6fbb0157687440e9f2b97340e5a4faa763d5391851c3dde6e2fde0ae831226c6c039826c6f785efb15efdc36e549f9e561f11'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -140,7 +140,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length.
-  config.password_length = 8..128
+  config.password_length = 4..128
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
