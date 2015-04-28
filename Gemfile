@@ -25,8 +25,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
 gem 'cancancan', '~> 1.10'
+
 gem "twitter-bootstrap-rails"
 gem "haml-rails", "~> 0.9"
+gem "paperclip", "~> 4.2"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -45,6 +48,16 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'rspec'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'simplecov', :require => false
+  gem "capybara-webkit", ">= 1.2.0"
+  gem 'selenium-webdriver'
+end
 
+group :test do
+  gem 'database_cleaner'
 end
 

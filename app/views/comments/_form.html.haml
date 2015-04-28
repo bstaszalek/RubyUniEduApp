@@ -1,8 +1,6 @@
 = form_for([@article, @article.comments.build]) do |f|
   %p
-    = f.label :commenter
-    %br/
-    = f.text_field :commenter
+    = f.hidden_field :commenter, value: current_user.try(:email)
   %p
     = f.label :body
     %br/
